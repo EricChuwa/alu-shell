@@ -1,1 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#This script displays the visitor's ip from apache file
+
+file="apache-access.log"
+awk '{print $1, $9}' $file
